@@ -1,5 +1,5 @@
 import socket
-
+# Se conecta a ese servidor en el mismo host y puerto
 cliente = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 cliente.connect((socket.gethostname(),1234))
 # Se envia como byte,se recibe como byte,se maneja todo con byte
